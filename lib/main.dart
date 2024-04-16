@@ -115,8 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
           });
         },
         items: const [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.restaurant), label: "Ресторан"),
+          BottomNavigationBarItem(icon: Icon(Icons.restaurant), label: "Ресторан"),
           BottomNavigationBarItem(icon: Icon(Icons.map), label: "Место"),
           BottomNavigationBarItem(icon: Icon(Icons.more), label: "Еще"),
         ],
@@ -129,24 +128,21 @@ class _MyHomePageState extends State<MyHomePage> {
               leading: const Icon(Icons.restaurant),
               title: const Text("Ресторан"),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
-                _navigateTo(0);
+
               },
             ),
             ListTile(
               leading: const Icon(Icons.map),
               title: const Text("Место"),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
-                _navigateTo(1);
+
               },
             ),
             ListTile(
               leading: const Icon(Icons.more),
               title: const Text("Еще"),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
-                _navigateTo(2);
+
               },
             ),
           ],
